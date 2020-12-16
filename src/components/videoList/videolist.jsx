@@ -6,7 +6,7 @@ const VideoList = ({ videos }) => {
   return (
     <ul className={styles.listContainer}>
       {videos.map((video) => (
-        <VideoItem key={video.id} video={video} />
+        <VideoItem key={video.etag} video={video} />
       ))}
     </ul>
   );

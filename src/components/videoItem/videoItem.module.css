@@ -1,5 +1,4 @@
 .container {
-  flex-basis: 1 1 1;
   position: relative;
   cursor: pointer;
 }
