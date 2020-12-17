@@ -1,12 +1,13 @@
 import React, { useRef } from "react";
 import styles from "./searchBar.module.css";
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = ({ onSearch, resetVideoSelect }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
     const userQuery = inputRef.current.value;
     onSearch(userQuery);
+    resetVideoSelect();
     inputRef.current.value = "";
   };
 

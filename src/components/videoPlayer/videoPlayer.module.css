@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+  height: 67%;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  height: 500px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+  padding: 1em 0;
+}
+
+dl {
+  display: flex;
+  justify-content: space-between;
+}
+
+dl > div {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+dl dt {
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+dl dt::after {
+  content: ":";
+}
+
+.channel dd {
+  color: #e74c3c;
+  font-weight: 600;
+}
