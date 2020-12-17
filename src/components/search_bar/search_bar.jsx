@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import styles from "./searchBar.module.css";
+import styles from "./search_bar.module.css";
 
 const SearchBar = ({ onSearch, resetVideoSelect }) => {
   const inputRef = useRef();

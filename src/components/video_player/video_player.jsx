@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./videoPlayer.module.css";
+import styles from "./video_player.module.css";
 
 const VideoPlayer = ({ selectedVideo }) => {
   const snippet = selectedVideo.snippet;
@@ -7,12 +7,12 @@ const VideoPlayer = ({ selectedVideo }) => {
   const id = !selectedVideo.id.length
     ? selectedVideo.id.videoId
     : selectedVideo.id;
-  console.log(id);
   return (
     <section className={styles.container}>
       <div className={styles.player}>
         <iframe
           id="player"
+          title={snippet.title}
           type="text/html"
           width="80%"
           height="400"
