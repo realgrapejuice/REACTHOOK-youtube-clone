@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 유튜브 웹사이트 클론
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 0. 목표로 삼은 부분
 
-## Available Scripts
+- 리엑트 훅에 익숙해지기
+- API를 이용해 데이터를 받아오고, 가공해서 웹사이트에 보여주도록 만들기
 
-In the project directory, you can run:
+### 1. 특징 및 기능
 
-### `yarn start`
+- 유튜브 API를 이용해 원하는 영상을 검색하고 시청할 수 있음
+- ES6의 async, await을 이용해 비동기적인 작업을 진행
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 2. 사용 스택
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+해당 프로젝트는 **HTML**, **CSS**, **React**를 사용해서 만들었습니다.
 
-### `yarn test`
+### 3. 프로젝트 스크린샷
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+#### 3.1 홈 화면 스크린샷
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66715905/113837558-ef5c7780-97c8-11eb-93fa-722cd40c4650.PNG" width="50%">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 3.2 검색 기능 스크린샷
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66715905/113837965-4c582d80-97c9-11eb-96d7-df86f30a8237.gif" width="50%">
+</p>
 
-### `yarn eject`
+#### 3.3 비디오 선택 후 재생 스크린샷
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66715905/113838085-6a259280-97c9-11eb-8cfe-5223bc301cdf.gif" width="50%">
+</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. 피드백 및 리뷰
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### 4.1 잘한 점
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- API를 사용해 데이터를 받아오고, 받아온 데이터를 처리해 검색할 수 있게 구현한 부분을 통해 서버와 통신하는 부분을 경험할 수 있었음
+- 역할 별로 파일을 분류해 API를 처리하고 서버와 통신하는 부분과 실제로 유저에게 보여지는 부분을 구분하여 작업해 코드의 가독성을 높인 부분이 좋았음
+- 실제로 영상을 검색하고, 원하는 것을 시청할 수 있게 구현해서 흥미로웠음
 
-## Learn More
+#### 4.2 아쉬운 점
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- PC 브라우저에서는 구성한 레이아웃이 불편하지 않게 느껴졌지만, 모바일까지 고려해야 했다면 이 레이아웃이 불편할 것 같았음. 이런 맥락에서 반응형을 구현할 때 단순히 레이아웃 뿐만이 아니라 실제로 사용자가 이 페이지를 어떻게 이용할 것인지를 더 깊게 고려할 필요가 있다고 생각이 됐음
